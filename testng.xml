@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/alanliew/Desktop/Automation/Selenium-Java/TestNG">
+
+        <classes>
+
+            <class name="TC1_annotations_Before_After"></class>
+            <class name="TC1_annotations_Before_After_2"></class>
+
+        </classes>
+
+
+
+    </test>
+</suite>
