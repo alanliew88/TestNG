@@ -1,6 +1,6 @@
 import org.testng.annotations.Test;
 
-public class TC3_Dependency {
+public class TC3_Dependency_alwaysRun {
 
     @Test
     void startcar(){
@@ -11,7 +11,7 @@ public class TC3_Dependency {
         System.out.println("Vvroom vrromm");
     }
 
-    @Test (dependsOnMethods = {"startcar", "drivecar"})
+    @Test (dependsOnMethods = {"startcar", "drivecar"}, alwaysRun = true)
     void stopcar(){
         System.out.println("tik tik");
     }
