@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-
-    <parameter name="Browser" value="chrome"/>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com"/>
-    <test name ="Test NG test">
-
-
-
+    <test name ="Parallel Testing" parallel = "classes">
         <classes>
-
-            <class name="TC6_Parameters"></class>
-
-
+            <class name="paralleltesting.TC9_ParallelTesting">
+                <methods>
+                    <include name="logotest"/>
+                    <include name="homePageTitle"/>
+                </methods>
+            </class>
+            <class name="paralleltesting.TC9_ParallelTesting2">
+                <methods>
+                    <include name="logotest"/>
+                    <include name="homePageTitle"/>
+                </methods>
+            </class>
         </classes>
-
-
-
     </test>
 </suite>
