@@ -61,3 +61,7 @@
      - [testng\-failed.xml](test-output/testng-failed.xml)
    - [testng.xml](testng.xml)
 
+
+
+
+THIS is TESTNG with all the annotations , with the help of testng.xml to run
